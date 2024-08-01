@@ -1,0 +1,19 @@
+.big {
+    zoom:1.5;
+}
+.center {
+    margin: auto;
+    width: 30%;
+    border: 5px solid black;
+    padding: 10px;
+}
+.buttonStyle {
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+}
+.error {color: #FF0000;}
