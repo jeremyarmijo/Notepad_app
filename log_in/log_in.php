@@ -1,11 +1,10 @@
-<?php include 'account_notes.php'; ?>
-
-<link rel="stylesheet" type="text/css" href="index.css" />
+<?php include 'check_log_in.php'; ?>
+<link rel="stylesheet" type="text/css" href="../index.css" />
 <!DOCTYPE html>
 <html>
 <body>
 
-<form action="sign_up.php" method="POST">
+<form action="../sign_up/sign_up.php" method="POST">
     <input class="buttonStyle" name="Sign up" type="submit" value="Sign up"/>
 </form>
 

@@ -1,6 +1,6 @@
 <?php
-    include 'input_error_handling.php';
-    include 'connect_database.php';
+    include '../src/input_error_handling.php';
+    include '../db/connect_database.php';
     include 'add_account.php';
 
     function check_sign_up()

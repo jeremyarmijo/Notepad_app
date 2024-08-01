@@ -1,10 +1,11 @@
 <?php
-    include 'connect_database.php';
-    include 'input_error_handling.php';
+    include '../req/req_check_data.php';
+    include '../db/connect_database.php';
+    include '../src/input_error_handling.php';
 
-    function login($email, $message, $password)
+    function login($conn, $email, $message, $password)
     {
-        $stmt = req_check_data($conn, "SELECT email FROM  WHERE email = ?", $email);
+        $stmt = req_check_data($conn, "SELECT email FROM user WHERE email = ?", $email);
         if ($stmt->num_rows > 0) {
             $message = "<h4 class='error' style='zoom: 0.5;'>Error: This email already exists.</h4>";
         } else {
@@ -30,7 +31,7 @@
             $password = mysqli_real_escape_string($conn, $_POST['password']);
             $confirm_password = "#login";
             if (!input_error_handling($email, $message, $password, $confirm_password))
-                $message = login($email, $message, $password);
+                $message = login($conn, $email, $message, $password);
         }
         mysqli_close($conn);
         return $message;

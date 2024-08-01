@@ -1,17 +1,17 @@
 <?php include 'check_sign_up.php';?>
+<link rel="stylesheet" type="text/css" href="../index.css" />
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>CAPTCHA Validation</title>
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="../index.css" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-    <form action="log_in.php" method="POST">
+    <form action="../log_in/log_in.php" method="POST">
         <input class="buttonStyle" name="Log in" type="submit" value="Log in"/>
     </form>
-
     <div class="center">
         <form method="POST">
             <div class="big">
