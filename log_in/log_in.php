@@ -21,6 +21,5 @@
     <input class="buttonStyle" type="submit" name="submit" value="Submit">
     </form>
 </div>
-<!-- password_verify('aaa', $hash) -->
 </body>
 </html>
