@@ -7,6 +7,7 @@
     {
         $conn = connect_database();
         $message = "";
+
         if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
             $email = mysqli_real_escape_string($conn, $_POST['email']);
             $password = mysqli_real_escape_string($conn, $_POST['password']);
