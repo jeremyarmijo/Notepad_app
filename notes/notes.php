@@ -15,10 +15,14 @@
 ?>
 <html>
 <body>
-<form action="../notes/add_note.php" method="POST">
-    <input class="buttonStyle" name="Add note" type="submit" value="Add note"/>
+<form action="../home.php" method="POST">
+    <input name="Disconnect" type="submit" value="Disconnect"/>
 </form>
-<h1><center/>Your notes</h1>
+<h1><center/>Your notes
+    <form action="../notes/add_note.php" method="POST"><br/>
+        <input class="buttonStyle" name="Add note" type="submit" value="Add note"/>
+    </form>
+</h1>
 <?php
     echo $notes;
 ?>
